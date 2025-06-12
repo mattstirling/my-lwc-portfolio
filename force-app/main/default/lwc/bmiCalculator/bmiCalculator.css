@@ -9,6 +9,14 @@
     --size-12: 12px;
 }
 
+.app{
+    min-height: 100vh;
+    background-image: url(/sfsites/c/resource/BMIAppBackground);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 .box{
     max-width: 420px;
     text-align: center;
@@ -37,4 +45,28 @@ h1{
 h2{
     font-size: 26px;
     color: var(--light-pink);
+}
+
+label{
+    font-size: 20px;
+    color: var(--light-white);
+}
+
+input{
+    color: var(--dull-blue);
+    padding: 8px;
+    font-size: var(--size-16);
+}
+
+.custom-button{
+    border-color: var(--light-pink);
+    padding: var(--size-12);
+    background: var(--light-pink);
+    color: var(--light-white);
+    font-size: var(--size-16);
+}
+
+.result-value{
+    color: var(--light-blue);
+    font-size: 30px;
 }
