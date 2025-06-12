@@ -1,0 +1,61 @@
+:host(){
+    --dark-blue_old: #0b0d21;
+    --light-white:#fafafa;
+    --light-blue_old:#4f7df9;
+    --light-pink:#e91e63;
+    --dull-blue: #1d1e33;
+    --dark-blue: #243356;
+    --white: #ffffff;
+    --yellow: #ffcd0a;
+    --light-blue: #00d9fe;
+    --size-16: 16px;
+    --size-14: 14px;
+    --size-12: 12px;
+}
+
+.alarm-card{
+    max-width: 440px;
+    width: 100%;
+    padding: 30px;
+    background: var(--dark-blue);
+    color: var(--white);
+    border-radius: var(--size-16);
+    margin: 24px auto;
+}
+
+h1{
+    color: var(--yellow);
+    font-size: 36px;
+    text-align: center;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 48px;
+    color: var(--light-blue);
+    font-weight: 500;
+    margin: 30px auto;
+    text-align: center;
+}
+
+button{
+    border-color: var(--yellow);
+    padding: var(--size-14);
+    background: var(--yellow);
+    color: var(--dark-blue);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+img{
+    margin: 20px auto;
+    display: block;
+}
+
+.custom-label{
+    color: var(--light-blue);
+}
+
+.custom-select{
+    color: var(--dark-blue);
+}

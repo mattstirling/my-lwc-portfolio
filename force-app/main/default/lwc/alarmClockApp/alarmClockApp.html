@@ -1,0 +1,61 @@
+<template>
+    <div class="alarm-card">
+        <h1>Alarm Clock</h1>
+        <img src={clockImage} alt="Clock Image" height="200px" width="200px">
+        <h2>{currentTime}</h2>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col">
+                <div class="slds-form-element slds-has-error">
+                    <label class="slds-form-element__label custom-label" for="select-hour">
+                        <abbr class="slds-required" title="required" aria-hidden="true">* </abbr>Hour</label>
+                    <div class="slds-form-element__control">
+                        <div class="slds-select_container">
+                            <select aria-describedby="error-hour" class="slds-select custom-select" id="select-hour" required="">
+                                <option value="">Select…</option>
+                                <template for:each={hours} for:item="hour">
+                                    <option value={hour} key={hour}>{hour}</option> 
+                                </template>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="slds-form-element__help" id="error-hour">Select an option.</div>
+                </div>
+            </div>
+            <div class="slds-col">
+                <div class="slds-form-element slds-has-error">
+                    <label class="slds-form-element__label custom-label" for="select-minute">
+                        <abbr class="slds-required" title="required" aria-hidden="true">* </abbr>Minute</label>
+                    <div class="slds-form-element__control">
+                        <div class="slds-select_container">
+                            <select aria-describedby="error-minute" class="slds-select custom-select" id="select-minute" required="">
+                                <option value="">Select…</option>
+                                <template for:each={minutes} for:item="minute">
+                                    <option value={minute} key={minute}>{minute}</option> 
+                                </template>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="slds-form-element__help" id="error-minute">Select an option.</div>
+                </div>
+            </div>
+            <div class="slds-col">
+                <div class="slds-form-element slds-has-error">
+                    <label class="slds-form-element__label custom-label" for="select-ampm">
+                        <abbr class="slds-required" title="required" aria-hidden="true">* </abbr>AM/PM</label>
+                    <div class="slds-form-element__control">
+                        <div class="slds-select_container">
+                            <select aria-describedby="error-ampm" class="slds-select custom-select" id="select-ampm" required="">
+                                <option value="">Select…</option>
+                                <option>AM</option>
+                                <option>PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="slds-form-element__help" id="error-ampm">Select an option.</div>
+                </div>
+            </div>
+        </div>
+        <button class="slds-button slds-button_neutral slds-button_stretch">
+            Set Alarm</button>
+    </div>
+</template>
