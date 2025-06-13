@@ -1,4 +1,4 @@
-:host(){
+:host{
     --dark-blue_old: #0b0d21;
     --light-white:#fafafa;
     --light-blue_old:#4f7df9;
@@ -50,12 +50,4 @@ button{
 img{
     margin: 20px auto;
     display: block;
-}
-
-.custom-label{
-    color: var(--light-blue);
-}
-
-.custom-select{
-    color: var(--dark-blue);
 }
