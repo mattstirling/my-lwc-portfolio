@@ -6,8 +6,8 @@ export default class ClockDropdown extends LightningElement {
     @api uniqueId = '';
 
     changeHandler(event){
-        console.log(this.label);
-        console.log(event.target.value);
+        //console.log(this.label);
+        //console.log(event.target.value);
         this.callParent(event.target.value)
     }
 
@@ -18,5 +18,11 @@ export default class ClockDropdown extends LightningElement {
                 value: value
             }
         }))
+    }   
+
+    @api
+    reset(value){
+        this.template.querySelector('select').value = value;
+        this.callParent(value);
     }
 }
